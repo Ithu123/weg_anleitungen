@@ -25,12 +25,13 @@
 !!! warning "Das sind nicht die Hauptsysteme der Schule"
 
     Die Dienste, um die es hier geht, laufen **neben** dem offiziellen Angebot.
-    Ich betreibe und pflege sie zusätzlich und auf eigene Rechnung — sie sind
+    Ich betreibe und pflege sie zusätzlich — sie sind
     kein Ersatz für die Systeme, auf die sich die Schule offiziell stützt, und
     was dort gilt, gilt weiterhin.
 
     Praktisch heißt das vor allem eines: Wenn hier etwas klemmt, hilft nicht das
-    Sekretariat weiter, sondern ich.
+    Sekretariat oder der Admin der Schule weiter  weiter, sondern Herr Baier ([Mail](mailto:bai@werkgymnasium.eu)). In dringenden Fällen erreichbar über 
+    [admin@werkgymnasium.eu](mailto:admin@werkgymnasium.eu).
 
     <!-- TODO: Kontaktweg eintragen (Chat-Adresse oder Mail). -->
 

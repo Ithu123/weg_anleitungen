@@ -4,7 +4,9 @@ Der Weg ohne Installation: Es genügt ein Browser. Das ist der richtige Weg am
 eigenen Rechner — und der einzige am Schulrechner oder an einem geliehenen
 Gerät.
 
-[element.werkgymnasium.eu öffnen](https://element.werkgymnasium.eu){ .md-button .md-button--primary }
+<div class="mitte" markdown>
+[element.werkgymnasium.eu öffnen](https://element.werkgymnasium.eu){ .md-button .md-button--primary target="_blank" rel="noopener" }
+</div>
 
 ## 1. Die Seite öffnen
 
@@ -22,6 +24,7 @@ Begrüßungsbildschirm mit einem Knopf zum Anmelden. **Klicke danach auf Fortfah
 
 ## 2. Das vorausgewählte bestätigen
 Nun bestätigt man und fährt fort.
+
 ![Bestätigen Werkgymnasium.eu](../bilder/web/web-01-anmeldeknopf2.png)
 
 

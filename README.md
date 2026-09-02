@@ -1,6 +1,6 @@
 # Anleitungen des Werkgymnasiums
 
-Quelltext von <https://anleitungen.werkgymnasium.eu/> — den Anleitungen für die
+Quelltext von <https://werkgymnasium.eu/> — den Anleitungen für die
 digitalen Dienste der Schule.
 
 **Diese Website hat bewusst keine Anmeldung.** Wer seine Zugangsdaten vergessen

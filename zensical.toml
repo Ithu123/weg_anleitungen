@@ -21,7 +21,7 @@
 
 site_name = "Anleitungen — Werkgymnasium"
 site_description = "Wie man die digitalen Dienste der Schule benutzt"
-site_url = "https://anleitungen.werkgymnasium.eu/"
+site_url = "https://werkgymnasium.eu/"
 site_dir = "site"
 
 repo_url = "https://github.com/Ithu123/anleitungen"

@@ -20,3 +20,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Ein Knopf steht mittig, kein Fliesstext links daneben. Zensical setzt den
+ * Knopf in einen gewoehnlichen Absatz; zentriert wird deshalb der Absatz, nicht
+ * der Knopf selbst. Benutzt wird das ueber einen Wrapper:
+ *
+ *   <div class="mitte" markdown>
+ *   [Text](adresse){ .md-button .md-button--primary }
+ *   </div>
+ */
+.md-typeset .mitte {
+  text-align: center;
+}
