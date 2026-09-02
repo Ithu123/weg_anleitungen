@@ -1,39 +1,36 @@
-# Anleitungen der Werkgymnasium
-
-Wie man die digitalen Dienste der Schule benutzt — Chat, Dateien, Anmeldung.
+# Anleitungen des Werkgymnasiums
 
 <div class="grid cards" markdown>
 
--   __Chat mit Element__
+-   :material-book-open-variant:{ .lg .middle } __Zu den Anleitungen__
 
     ---
 
-    Anmelden, den Namen finden, Nachrichten schreiben. Der Messenger der Schule
-    läuft auf dem eigenen Server.
+    Der Chat der Schule: Anmelden am Handy, am Rechner, im Browser — Schritt für
+    Schritt und mit Bildern.
 
-    [Zur Anleitung](element.md)
+    [:octicons-arrow-right-24: Anleitungen öffnen](chat/index.md)
+
+-   :material-human-male-board:{ .lg .middle } __Für Lehrkräfte__
+
+    ---
+
+    Die übrigen Werkzeuge des Kollegiums stehen an einem zweiten
+    Ort. Anmeldung mit dem Schulkonto (Kürzel), Zugang nur für Lehrkräfte.
+
+    [:octicons-arrow-right-24: Anleitungen für Lehrkräfte](https://intern.werkgymnasium.eu/)
 
 </div>
 
-!!! info "Für Lehrkräfte: es gibt noch einen zweiten Ort"
+!!! warning "Das sind nicht die Hauptsysteme der Schule"
 
-    Anleitungen zu Nextcloud und den übrigen Werkzeugen des Kollegiums stehen
-    unter **[intern.werkgymnasium.eu](https://intern.werkgymnasium.eu/)**.
+    Die Dienste, um die es hier geht, laufen **neben** dem offiziellen Angebot.
+    Ich betreibe und pflege sie zusätzlich und auf eigene Rechnung — sie sind
+    kein Ersatz für die Systeme, auf die sich die Schule offiziell stützt, und
+    was dort gilt, gilt weiterhin.
 
-    Dort ist eine Anmeldung mit dem Schulkonto nötig, und Zugang haben **nur
-    Lehrkräfte** — für Schülerinnen und Schüler endet der Weg dort mit einer
-    Absage. Das ist kein Versehen: Die Werkzeuge dahinter stehen dem Kollegium
-    ohnehin allein offen, und eine Anleitung zu einem Dienst, den man nicht
-    benutzen kann, hilft niemandem.
+    Praktisch heißt das vor allem eines: Wenn hier etwas klemmt, hilft nicht das
+    Sekretariat weiter, sondern ich.
 
-!!! note "Diese Seiten brauchen keine Anmeldung"
+    <!-- TODO: Kontaktweg eintragen (Chat-Adresse oder Mail). -->
 
-    Und das ist Absicht. Eine Anleitung, die man erst nach dem Anmelden lesen
-    kann, hilft niemandem, der sich gerade **nicht** anmelden kann. Deshalb
-    steht hier alles offen — und deshalb steht hier auch nichts, was
-    vertraulich wäre.
-
-## Wer hilft, wenn es nicht weitergeht
-
-Wenn eine Anleitung nicht passt oder etwas nicht funktioniert, hilft die
-Klassenleitung oder das Sekretariat weiter.

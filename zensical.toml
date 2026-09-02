@@ -36,8 +36,17 @@ edit_uri = "edit/main/docs/"
 # dann einfach.
 nav = [
   { "Startseite" = "index.md" },
-  { "Chat mit Element" = "element.md" },
+  { "Chat mit Element" = [
+    { "Übersicht" = "chat/index.md" },
+    { "Element X" = "chat/element-x.md" },
+    { "SchildiChat Next" = "chat/schildichat-next.md" },
+    { "Im Browser" = "chat/web.md" },
+  ] },
 ]
+
+# Eine einzige Regel: drei Kaesten nebeneinander statt zwei plus einem
+# Waisenkind. Der Grund steht in der Datei.
+extra_css = ["stylesheets/extra.css"]
 
 [project.theme]
 language = "de"
@@ -76,6 +85,13 @@ md_in_html = {}
 tables = {}
 
 pymdownx.details = {}
+
+# Fuer die Symbole in den Kaesten auf der Startseite (`:material-...:`). Die
+# beiden Werte sind in Zensical zwar Standard, aber sobald hier ueberhaupt
+# etwas unter `markdown_extensions` steht, ERSETZT das die Vorgaben, statt sie
+# zu ergaenzen. Fehlt die Zeile, stehen die Kuerzel als Text auf der Seite.
+pymdownx.emoji = { emoji_index = "zensical.extensions.emoji.twemoji", emoji_generator = "zensical.extensions.emoji.to_svg" }
+
 pymdownx.highlight = { anchor_linenums = true }
 pymdownx.inlinehilite = {}
 pymdownx.keys = {}

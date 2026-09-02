@@ -1,0 +1,22 @@
+/* Drei Kaesten nebeneinander.
+ *
+ * Die Vorgabe des Themes verlangt je Kasten mindestens 16rem. Der Inhalt einer
+ * Seite ist auf dem Schreibtisch aber nur gut 36rem breit — drei Kaesten passen
+ * damit nicht in eine Reihe, und der dritte rutscht allein in die naechste.
+ *
+ * `.drei` senkt das Mindestmass so weit, dass die Reihe aufgeht. `auto-fit`
+ * bleibt erhalten: Wird es enger, faellt der Satz von selbst auf zwei Spalten
+ * und zuletzt auf eine.
+ */
+.md-typeset .grid.drei {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr));
+}
+
+/* Auf dem Handy immer untereinander. Zwei Spalten waeren dort zwar rechnerisch
+ * moeglich, aber so schmal, dass jede Ueberschrift umbricht.
+ */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .grid.drei {
+    grid-template-columns: 1fr;
+  }
+}
