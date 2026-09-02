@@ -1,0 +1,6 @@
+# Bauergebnis. Entsteht bei jedem Lauf neu und gehoert nicht ins Repo — der
+# Branch `site` traegt es, erzeugt von der Action.
+site/
+.cache/
+.venv-docs/
+__pycache__/

@@ -1,0 +1,84 @@
+# Die Anleitungen der Werkgymnasium.
+#
+#   .venv-docs/bin/zensical serve    -> http://localhost:8000
+#   .venv-docs/bin/zensical build    -> site/
+#
+# DIESE WEBSITE HAT KEINE ANMELDUNG, und das ist ihr ganzer Zweck. Wer seine
+# Zugangsdaten vergessen hat, kann sich nicht anmelden, um nachzulesen, wie man
+# sie zuruecksetzt. Eine Huerde hier machte die Seite nicht sicherer, sondern
+# wirkungslos — fuer genau die Leute, die sie am dringendsten brauchen.
+#
+# Daraus folgt eine Regel fuer den Inhalt: Hier steht nichts, was jemanden
+# gefaehrdet. Keine internen Adressen, keine Hostnamen von Servern, keine
+# Hinweise auf den Aufbau der Anlage. Das gehoert in die Betriebsdoku unter
+# betrieb.werkgymnasium.eu, und die liegt hinter dem SSO.
+#
+# Ausgeliefert wird von weg1: Die Action legt das Ergebnis im Branch `site`
+# unter `www/` ab, weg1 holt es per Timer alle fuenf Minuten. Die Ansible-Seite
+# steht im Repo `weg` unter roles/website und playbooks/websites.yml.
+
+[project]
+
+site_name = "Anleitungen — Werkgymnasium"
+site_description = "Wie man die digitalen Dienste der Schule benutzt"
+site_url = "https://anleitungen.werkgymnasium.eu/"
+site_dir = "site"
+
+repo_url = "https://github.com/Ithu123/anleitungen"
+edit_uri = "edit/main/docs/"
+
+# Jede neue Seite muss hier eingetragen werden, sonst taucht sie nicht auf. Das
+# ist ein Vorteil und kein Formalismus — es erzwingt bei jeder Seite die Frage,
+# fuer wen sie geschrieben ist.
+#
+# ACHTUNG: `nav`-Eintraege laufen NICHT durch die Pruefung von `--strict`. Eine
+# Zeile, deren Datei fehlt, wird stillschweigend uebersprungen — die Seite fehlt
+# dann einfach.
+nav = [
+  { "Startseite" = "index.md" },
+  { "Chat mit Element" = "element.md" },
+]
+
+[project.theme]
+language = "de"
+features = [
+  "navigation.instant",
+  "navigation.top",
+  "navigation.footer",
+  "toc.follow",
+  "content.action.edit",
+  "search.highlight",
+  "search.suggest",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Zu hellem Design wechseln"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Zu dunklem Design wechseln"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Systemeinstellung uebernehmen"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+def_list = {}
+md_in_html = {}
+tables = {}
+
+pymdownx.details = {}
+pymdownx.highlight = { anchor_linenums = true }
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.magiclink = {}
+pymdownx.tabbed = { alternate_style = true }
+pymdownx.tasklist = { custom_checkbox = true }

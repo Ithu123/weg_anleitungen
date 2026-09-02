@@ -1,0 +1,99 @@
+# Baut die Website und legt das Ergebnis im Branch `site` ab.
+#
+# Warum hier und nicht auf weg1: Ein Bau-Timer auf dem Server scheitert
+# schweigend, und dann liest man monatelang einen alten Stand, ohne es zu
+# merken. Eine fehlgeschlagene Action dagegen meldet sich: rotes Kreuz am
+# Commit und eine Mail.
+#
+# Der zweite Grund ist die Maschine selbst. weg1 ist aus dem Internet
+# erreichbar und bekommt so keine Build-Kette: kein Python, kein pip, keine
+# Abhaengigkeit zu PyPI zur Laufzeit. Der Server sieht ausschliesslich fertiges
+# HTML.
+
+name: Website bauen
+
+on:
+  push:
+    branches: [main]
+  # Damit ein Bau auch ohne Commit ausgeloest werden kann, etwa nach einem
+  # gescheiterten Lauf.
+  workflow_dispatch:
+
+# Nur schreiben, was noetig ist: der Branch `site` im selben Repo.
+permissions:
+  contents: write
+
+# Zwei gleichzeitige Laeufe wuerden sich beim Push auf `site` gegenseitig
+# ueberholen. Der neuere gewinnt, der aeltere wird abgebrochen.
+concurrency:
+  group: bauen
+  cancel-in-progress: true
+
+jobs:
+  bauen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo holen
+        uses: actions/checkout@v4
+
+      - name: Python bereitstellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Zensical installieren
+        # In ein venv `.venv-docs` und NICHT systemweit — damit macht die
+        # Action dasselbe, was ein Mensch laut README lokal tut. Zwei Wege, die
+        # auseinanderlaufen, waeren genau die Sorte Unterschied, die man erst
+        # im Ernstfall bemerkt.
+        #
+        # Die Version ist in requirements-docs.txt gepinnt. Ein Bau, der sich
+        # die neueste Fassung zieht, aendert das Ergebnis ohne Commit.
+        run: |
+          python3 -m venv .venv-docs
+          .venv-docs/bin/pip install --quiet -r requirements-docs.txt
+
+      - name: Bauen
+        # `--strict` laesst den Bau ueber jeden Verweis abbrechen, der ins
+        # Leere laeuft, statt einen toten Link auszuliefern.
+        #
+        # ACHTUNG: `nav`-Eintraege prueft es NICHT. Eine Zeile in zensical.toml,
+        # deren Datei fehlt, wird stillschweigend uebersprungen.
+        run: .venv-docs/bin/zensical build --strict
+
+      - name: Baustand vermerken
+        # Der sichtbare Zeitstempel ist die Gegenmassnahme zum stillen
+        # Einfrieren: Bleibt der Abgleich auf weg1 stehen, faellt beim Lesen
+        # ein Datum von vor drei Wochen auf, ohne dass jemand etwas ueberwachen
+        # muss. Die Datei liest die Ansible-Rolle spaeter auch fuer ihre
+        # Abnahme.
+        run: |
+          date --utc --iso-8601=seconds > site/GEBAUT
+          git rev-parse --short HEAD >> site/GEBAUT
+
+      - name: Ergebnis nach `site` legen
+        run: |
+          set -eu
+
+          test -f site/index.html || {
+            echo "site/index.html fehlt — der Bau ist unvollstaendig." >&2
+            exit 1
+          }
+
+          # Die Website kommt in einen UNTERORDNER `www/` und nicht in die
+          # Wurzel des Branches. Der Grund ist `.git/`: weg1 klont diesen
+          # Branch, und laege die Website in der Wurzel, laege die vollstaendige
+          # Geschichte aller Bauergebnisse mit im Auslieferungsverzeichnis —
+          # abrufbar unter /.git/. Mit dem Unterordner zeigt nginx' `root` auf
+          # `www/`, und `.git/` liegt eine Ebene darueber ausserhalb.
+          rm -rf /tmp/site && mkdir -p /tmp/site
+          cp -a site /tmp/site/www
+
+          # Ein Branch ohne gemeinsame Geschichte mit main. Er enthaelt
+          # ausschliesslich das Bauergebnis, keinen Repo-Code.
+          cd /tmp/site
+          git init -q -b site
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git -c user.name=ci -c user.email=ci@local add -A
+          git -c user.name=ci -c user.email=ci@local commit -q -m "Bau ${{ github.sha }}"
+          git push -q --force origin site
