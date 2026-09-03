@@ -12,10 +12,10 @@ Einstellungen mehr.
 !!! warning "Noch nicht ganz fertig"
 
     Die Entwickler bezeichnen SchildiChat Next selbst als Beta: Es fehlen
-    einzelne Funktionen, die Element X schon hat. Wer nichts basteln will,
-    nimmt besser [Element X](element-x.md).
-
-## 1. Installieren
+    einzelne Funktionen, die Element X schon hat. 
+    Deswegen wird zu Schildichat hier keine Anleitung gegeben. Die App funktioniert, 
+    die Einrichtung läuft ganz ähnlich ab, wie bei Element X, ist aber nicht fertig.
+<!-- ## 1. Installieren
 
 SchildiChat Next gibt es im **Play Store** und bei **F-Droid**. Beide Wege
 führen zur selben App; welcher der bequemere ist, sagt einem das eigene Handy
@@ -87,4 +87,5 @@ häufigste Fall, wenn das zweite Gerät gerade nicht geöffnet war.
 ---
 
 Fertig. Wie man jemanden findet und wie die eigene Adresse aussieht, steht auf
-der [Übersichtsseite](index.md).
+der [Übersichtsseite](index.md). 
+-->
