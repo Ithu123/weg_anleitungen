@@ -3,6 +3,10 @@
 Die App für Android und iPhone. Von der Installation bis zur ersten Nachricht
 sind es fünf Schritte.
 
+
+## 1. Die richtige App downloaden und installieren
+
+
 !!! warning "Es gibt zwei Apps, die fast gleich heißen"
 
     Neben **Element X** liegt im Store noch die ältere App, die nur **Element**
@@ -12,22 +16,18 @@ sind es fünf Schritte.
     Wer die falsche erwischt hat: deinstallieren, die andere holen. Es geht
     dabei nichts verloren, die Nachrichten liegen ohnehin auf dem Server.
 
-## 1. Die richtige App installieren
-
 Im **Play Store** (Android) oder im **App Store** (iPhone) nach `Element X`
 suchen und installieren.
 
-![Element X im Store](../bilder/ex-01-store.png)
-
-
+![Element X im Store](../bilder/ex/ex_store.png)
 
 ## 2. Anmelden auswählen
 
-App öffnen. Auf dem Startbildschirm auf **„Anmelden“** tippen (je nach Version
+App öffnen. Auf dem Startbildschirm auf **„ Manuell Anmelden“** tippen (je nach Version
 heißt der Knopf „Ich habe bereits ein Konto“). Ein Konto **anlegen** muss man
 nicht — es gibt schon eins, nämlich das Schulkonto.
 
-![Startbildschirm der App](../bilder/ex-02-start.png)
+![Startbildschirm der App](../bilder/ex_start.png)
 
 ## 3. Den Server der Schule eintragen
 
@@ -40,28 +40,25 @@ Auf **„Ändern“** beziehungsweise **„Bearbeiten“** tippen und eintragen:
 werkgymnasium.eu
 ```
 
-![Server-Auswahl mit dem Knopf zum Ändern](../bilder/ex-03-server.png)
-
-!!! note "Warum `werkgymnasium.eu` und nicht die lange Adresse"
-
-    Beides führt zum Ziel, aber die kurze Form ist die richtige: Sie ist die
-    Adresse der Schule im Chat-Netz, und der Server sagt der App von selbst, wo
-    er technisch erreichbar ist. Wer die lange Form einträgt, bekommt am Ende
-    dieselbe Verbindung — nur steht dann in der eigenen Adresse etwas anderes
-    als bei allen anderen.
+![Server-Auswahl mit dem Knopf zum Ändern](../bilder/ex/ex_adresse.png)
 
 ## 4. Mit dem Schulkonto anmelden
 
-Die App öffnet ein Browserfenster mit der Anmeldeseite der Schule. Dort das
+Die App öffnet ein Browserfenster mit authentik. Dort das
 gewohnte Schulkonto eingeben — dasselbe Kürzel und Kennwort wie am Schulrechner.
 
-![Anmeldeseite der Schule über der App](../bilder/ex-04-schulanmeldung.png)
+![Anmeldeseite der Schule über der App](../bilder/ex_sso.png)
 
 Wenn danach gefragt wird, ob die App auf das Konto zugreifen darf: bestätigen.
 Das Browserfenster schließt sich anschließend von selbst, und die App macht
 weiter.
 
-## 5. Die Verschlüsselung freischalten
+## 5. Die Sitzung verifizieren
+
+??? info "Verifizieren?"
+    Die Geräteverifizierung schützt vor Betrügern und anderen böswilligen Akteuren, die Angriffe im Man-in-the-Middle-Stil versuchen.
+
+    Mit Element kannst Du jedes Gerät verfolgen, das an einer verschlüsselten Konversation teilgenommen hat. Wenn ein neues und unerwartetes Gerät beitritt, kannst Du mithilfe der Geräteüberprüfung überprüfen, ob es sich um die richtige Person handelt. Wenn Du den Verdacht hast, dass ein vertrauenswürdiges Gerät in die falschen Hände geraten ist, kannst Du dieses Vertrauen aufheben und ihm den Zugriff auf die laufende verschlüsselte Konversation entziehen. 
 
 Ein frisch angemeldetes Gerät kann die alten Nachrichten noch nicht lesen. Was
 jetzt zu tun ist, hängt davon ab, ob schon ein anderes Gerät angemeldet ist:
@@ -72,8 +69,21 @@ jetzt zu tun ist, hängt davon ab, ob schon ein anderes Gerät angemeldet ist:
     Nachfrage, danach zeigen beide dieselben Zeichen oder Bilder. Stimmen sie
     überein, auf beiden Seiten bestätigen.
 
-    Alternativ tippt man den **Wiederherstellungsschlüssel** ein — die lange
+    <div class="grid drei" markdown>
+
+    ![Verifizierung anfordern](../bilder/ex/ex_verifizierung.png)
+
+    ![Verifizierung gestartet](../bilder/ex/ex_ident.png)
+
+    ![Emojis](../bilder/ex/ex_emojis.png)
+
+    </div>
+
+
+    Alternativ kopiert man den **Wiederherstellungsschlüssel** ein — die lange
     Folge aus Buchstaben und Ziffern vom ersten Einrichten.
+
+    
 
 === "Es ist das allererste Mal"
 
