@@ -47,7 +47,7 @@ werkgymnasium.eu
 Die App öffnet ein Browserfenster mit authentik. Dort das
 gewohnte Schulkonto eingeben — dasselbe Kürzel und Kennwort wie am Schulrechner.
 
-![Anmeldeseite der Schule über der App](../bilder/ex_sso.png)
+![Anmeldeseite der Schule über der App](../bilder/ex/ex_sso.png)
 
 Wenn danach gefragt wird, ob die App auf das Konto zugreifen darf: bestätigen.
 Das Browserfenster schließt sich anschließend von selbst, und die App macht
