@@ -47,6 +47,19 @@ alle fünf Minuten per Timer — er baut nichts selbst und sieht nur fertiges HT
 Die Ansible-Seite steht im Repo `weg`: `roles/website` und
 `playbooks/websites.yml`.
 
+**Wer nicht auf den Timer warten will**, löst den Abgleich auf dem Server von
+Hand aus. Er steckt in einem eigenen systemd-Dienst je Website — für diese hier
+`anleitungen-abgleich.service` —, und weil er ein `oneshot` ist, wartet ein
+`systemctl start` darauf auf sein Ende und meldet den Status. Zugang, Befehle
+und Diagnose stehen in der Betriebsdoku unter *Doku lesen und bauen*; hier nicht,
+siehe die Regel oben.
+
+Dabei gilt: **Der Abgleich holt nur, was die Action schon abgelegt hat.** Läuft
+der Bau noch oder ist er rot, läuft der Abgleich erfolgreich durch und holt den
+alten Stand — er sieht dann genauso gesund aus wie ein erfolgreicher. Ob es
+gewirkt hat, sagt allein der Zeitstempel im Seitenfuß, maschinenlesbar unter
+<https://werkgymnasium.eu/GEBAUT>.
+
 ## Eine Seite hinzufügen
 
 1. Markdown-Datei unter `docs/` anlegen.

@@ -40,7 +40,8 @@ nav = [
     { "Übersicht" = "chat/index.md" },
     { "Element X" = "chat/element-x.md" },
     { "SchildiChat Next" = "chat/schildichat-next.md" },
-    { "Im Browser" = "chat/web.md" },
+    { "Im Browser anmelden" = "chat/web.md" },
+    { "Chats sichern" = "chat/ChatsSichern.md" },
   ] },
 ]
 
