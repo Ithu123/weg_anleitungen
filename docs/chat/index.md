@@ -75,3 +75,4 @@ In der Suche den Namen oder das Kürzel eingeben. Wenn die Suche nichts findet,
 die **vollständige Adresse** von oben eintippen — dann fragt das Programm
 gezielt beim Server nach.
 
+Bei weiteren Fragen schau gerne auch in die [FAQ](faq.md)!

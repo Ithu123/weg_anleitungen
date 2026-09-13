@@ -27,18 +27,15 @@ App öffnen. Auf dem Startbildschirm auf **„ Manuell Anmelden“** tippen (je 
 heißt der Knopf „Ich habe bereits ein Konto“). Ein Konto **anlegen** muss man
 nicht — es gibt schon eins, nämlich das Schulkonto.
 
-![Startbildschirm der App](../bilder/ex_start.png)
+![Startbildschirm der App](../bilder/ex/ex_start.png)
 
 ## 3. Den Server der Schule eintragen
 
 Jetzt kommt der Schritt, an dem es am ehesten schiefgeht. Die App schlägt
 `matrix.org` vor. Das ist **nicht** der Server der Schule.
 
-Auf **„Ändern“** beziehungsweise **„Bearbeiten“** tippen und eintragen:
+Auf **„Ändern“** beziehungsweise **„Bearbeiten“** tippen und eintragen: `werkgymnasium.eu`
 
-```
-werkgymnasium.eu
-```
 
 ![Server-Auswahl mit dem Knopf zum Ändern](../bilder/ex/ex_adresse.png)
 
@@ -132,8 +129,8 @@ der [Übersichtsseite](index.md).
 
 ??? question "Die App sagt, der Server sei nicht erreichbar."
 
-    Meist ein Tippfehler in Schritt 3. Es muss genau `werkgymnasium.eu` dort
-    stehen — ohne `https://`, ohne `www.`, ohne Leerzeichen am Ende, das die
+    Meist ein Tippfehler in Schritt 3. Es muss genau `werkgymnasium.eu` mit  dort
+    stehen — mit **.eu**, ohne `https://`, ohne `www.`, ohne Leerzeichen am Ende, das die
     Tastatur des Handys gern anhängt.
 
 ??? question "Nach dem Anmelden ist die Liste leer."
