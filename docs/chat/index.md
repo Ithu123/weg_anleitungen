@@ -18,17 +18,18 @@ angemeldet sein.
 
     ---
 
-    Ableger von Element X, **nur für Android**.
+    Ohne Installation, an jedem Rechner.
+
+    [:octicons-arrow-right-24: Anmelden](web.md)
+
+
+    Ableger von Element X, **nur für Android, aktuell nicht offiziell**.
 
     [:octicons-arrow-right-24: Einrichten](schildichat-next.md)
 
 -   :material-web:{ .lg .middle } __Im Browser__
 
     ---
-
-    Ohne Installation, an jedem Rechner.
-
-    [:octicons-arrow-right-24: Anmelden](web.md)
 
 </div>
 
@@ -74,38 +75,3 @@ In der Suche den Namen oder das Kürzel eingeben. Wenn die Suche nichts findet,
 die **vollständige Adresse** von oben eintippen — dann fragt das Programm
 gezielt beim Server nach.
 
-## Häufige Fragen
-
-??? question "Sehen Lehrkräfte meine Nachrichten mit?"
-
-    Nein. Private Unterhaltungen sind Ende-zu-Ende-verschlüsselt; auch die
-    Administration kann sie nicht mitlesen. Was Lehrkräfte sehen, sind die
-    Räume, in denen sie selbst Mitglied sind.
-
-??? question "Ich habe mein Kennwort vergessen."
-
-    Das Kennwort für den Chat **ist** das Schulkonto — es gibt kein eigenes.
-    Ein neues Kennwort bekommt man dort, wo man auch für den Schulrechner eines
-    bekommt.
-
-??? question "Ich habe ein neues Handy und komme nicht mehr an alte Nachrichten."
-
-    Verschlüsselte Nachrichten kann nur ein Gerät lesen, das dafür freigegeben
-    ist. Beim Anmelden auf einem neuen Gerät fragt das Programm deshalb nach dem
-    **Wiederherstellungsschlüssel** oder bittet darum, die Anmeldung auf einem
-    alten, noch angemeldeten Gerät zu bestätigen.
-
-    Ist beides nicht mehr möglich, bleiben die alten Nachrichten unlesbar — neue
-    kommen normal an. Das ist der Preis der Verschlüsselung und lässt sich von
-    der Schule aus nicht umgehen.
-
-??? question "Kann ich mich auf mehreren Geräten gleichzeitig anmelden?"
-
-    Ja, beliebig oft. Handy, Rechner, Tablet — die Unterhaltungen sind überall
-    dieselben. Nur muss jedes neue Gerät einmal die Verschlüsselung freigeschaltet
-    bekommen, siehe die Frage darüber.
-
-??? question "Muss ich mich um Updates kümmern?"
-
-    Die Apps aktualisieren sich über den Store von selbst. Die Browser-Fassung
-    ist immer aktuell, weil sie auf dem Server der Schule liegt.
