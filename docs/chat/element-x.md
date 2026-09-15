@@ -111,6 +111,10 @@ jetzt zu tun ist, hängt davon ab, ob schon ein anderes Gerät angemeldet ist:
     Grund: Das andere Gerät ist selbst noch nicht bestätigt und kann deshalb
     für keines bürgen. Dann bleibt der Wiederherstellungsschlüssel.
 
+Taucht später einmal eine Warnung über nicht verifizierte Sitzungen auf, geht es
+unter [Sitzungen verifizieren](verifizieren.md) weiter — dort steht auch, wie man
+alte Anmeldungen wieder loswird.
+
 ## 6. Benachrichtigungen erlauben
 
 Zum Schluss fragt das Handy, ob die App Benachrichtigungen schicken darf.
@@ -127,20 +131,4 @@ der [Übersichtsseite](index.md).
 
 ## Wenn es klemmt
 
-??? question "Die App sagt, der Server sei nicht erreichbar."
-
-    Meist ein Tippfehler in Schritt 3. Es muss genau `werkgymnasium.eu` mit  dort
-    stehen — mit **.eu**, ohne `https://`, ohne `www.`, ohne Leerzeichen am Ende, das die
-    Tastatur des Handys gern anhängt.
-
-??? question "Nach dem Anmelden ist die Liste leer."
-
-    Beim ersten Start holt die App die Unterhaltungen erst nach und nach. Ein
-    paar Sekunden warten. Bleibt es leer, ist die Anmeldung womöglich auf
-    `matrix.org` gelandet statt beim Server der Schule — dann in den
-    Einstellungen abmelden und ab Schritt 2 neu anfangen.
-
-??? question "Alle Nachrichten stehen als „Nicht entschlüsselbar“ da."
-
-    Dann ist Schritt 5 nicht durchgelaufen. In den Einstellungen unter
-    *Verschlüsselung* beziehungsweise *Sicherung* lässt er sich nachholen.
+Schu gerne auf der [FAQ](faq.md) vorbei, dort sammle ich bekannte Probleme.

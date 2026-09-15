@@ -101,6 +101,10 @@ Was zu tun ist, hängt davon ab, ob es schon ein **angemeldetes Gerät** gibt:
         Zettel im Geldbeutel. Schlechte Orte: eine Nachricht an sich selbst im
         Chat — die ist ja genau das, was ohne den Schlüssel unlesbar wird.
 
+Taucht später einmal eine Warnung über nicht verifizierte Sitzungen auf, geht es
+unter [Sitzungen verifizieren](verifizieren.md) weiter — dort steht auch, wie man
+alte Anmeldungen wieder loswird.
+
 <!-- 
 ## 5. Jemanden suchen
 

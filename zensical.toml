@@ -42,6 +42,7 @@ nav = [
     { "SchildiChat Next" = "chat/schildichat-next.md" },
     { "Im Browser anmelden" = "chat/web.md" },
     { "Chats sichern" = "chat/ChatsSichern.md" },
+    { "Sitzungen verifizieren" = "chat/verifizieren.md" },
     { "FAQ" = "chat/faq.md" },
   ] },
 ]
