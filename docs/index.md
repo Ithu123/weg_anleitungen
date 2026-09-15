@@ -41,9 +41,9 @@
 Ob die Dienste gerade laufen, steht an einer  Stelle — und zwar nicht
 hier, sondern auf der Statusseite. Sie wird von außen abgefragt und kennt die
 Antwort deshalb auch dann noch, wenn nichts anderes mehr geht.
-
+<div class="mitte" markdown>
 [Statusseite öffnen](https://status.werkgymnasium.eu){ .md-button .md-button--primary target="_blank" rel="noopener" }
-
+</div>
 **Steht dort alles auf grün und es klemmt trotzdem**, liegt es am eigenen Gerät
 oder an der Verbindung. Dann helfen die Anleitungen und die
 [häufigen Fragen](chat/faq.md) weiter.
