@@ -35,3 +35,21 @@
 
     <!-- TODO: Kontaktweg eintragen (Chat-Adresse oder Mail). -->
 
+
+## Liegt's an mir?
+
+Ob die Dienste gerade laufen, steht an einer  Stelle — und zwar nicht
+hier, sondern auf der Statusseite. Sie wird von außen abgefragt und kennt die
+Antwort deshalb auch dann noch, wenn nichts anderes mehr geht.
+
+[Statusseite öffnen](https://status.werkgymnasium.eu){ .md-button .md-button--primary target="_blank" rel="noopener" }
+
+**Steht dort alles auf grün und es klemmt trotzdem**, liegt es am eigenen Gerät
+oder an der Verbindung. Dann helfen die Anleitungen und die
+[häufigen Fragen](chat/faq.md) weiter.
+
+**Steht dort etwas auf rot**, ist es von außerhalb des Schulnetzes nicht erreichbar. 
+
+**Kommt die Statusseite selbst nicht**, ist damit noch nichts gesagt: Das kann
+an der eigenen Leitung liegen oder daran, dass gerade größer etwas ausgefallen
+ist. Beides sieht von hier aus gleich aus.
