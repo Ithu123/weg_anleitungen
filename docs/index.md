@@ -36,7 +36,7 @@
     <!-- TODO: Kontaktweg eintragen (Chat-Adresse oder Mail). -->
 
 
-## Liegt's an mir?
+## Liegt's an mir? - Status der einzelnen Services
 
 Ob die Dienste gerade laufen, steht an einer  Stelle — und zwar nicht
 hier, sondern auf der Statusseite. Sie wird von außen abgefragt und kennt die
